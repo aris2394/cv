@@ -4,7 +4,7 @@ import {
   ShieldCheck, GraduationCap, Briefcase, User,
   Terminal, Cpu, TerminalSquare, Activity,
   ChevronUp, Menu, X, Award, Clock,
-  Code2, Layers, Wifi, DatabaseZap, Globe
+  Code2, Layers, Wifi, DatabaseZap, Globe, Download
 } from 'lucide-react';
 
 /* ─── Intersection Observer hook ──────────────────────── */
@@ -248,6 +248,16 @@ function HeroHeader() {
                 className="px-7 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all duration-200 hover:shadow-[0_0_24px_rgba(59,130,246,0.5)] text-sm">
                 View Experience
               </button>
+
+              <a
+                href="/Aris_Setyawan_CV.pdf"
+                download="Aris_Setyawan_CV.pdf"
+                className="px-7 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all duration-200 hover:shadow-[0_0_24px_rgba(59,130,246,0.5)] text-sm flex items-center gap-2"
+              >
+                <Download size={16} />
+                Download CV (PDF)
+              </a>
+
               <a href="mailto:arissetyawan2394@gmail.com"
                 className="px-7 py-3 bg-transparent border border-slate-700 hover:border-blue-500/60 hover:bg-blue-500/10 text-slate-300 hover:text-white font-bold rounded-xl transition-all duration-200 text-sm">
                 Contact Me
