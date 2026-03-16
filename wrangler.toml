@@ -1,0 +1,10 @@
+name = "aris-cv"
+type = "javascript"
+account_id = ""
+workers_dev = true
+
+[build]
+command = "npm run build"
+cwd = "./"
+watch_paths = ["src/**/*.jsx", "src/**/*.css"]
+root = "dist"

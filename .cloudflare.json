@@ -1,0 +1,16 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "/",
+    "root": "dist"
+  },
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2025-01-01",
+  "env": {
+    "production": {
+      "build": {
+        "command": "npm run build"
+      }
+    }
+  }
+}
