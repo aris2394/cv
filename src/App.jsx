@@ -4,8 +4,9 @@ import {
   ShieldCheck, GraduationCap, Briefcase, User,
   Terminal, Cpu, TerminalSquare, Activity,
   ChevronUp, Menu, X, Award, Clock,
-  Code2, Layers, Wifi, DatabaseZap, Globe, Download
+  Code2, Layers, Wifi, DatabaseZap, Globe, Download, Zap
 } from 'lucide-react';
+import Projects from './components/Projects';
 
 /* ─── Intersection Observer hook ──────────────────────── */
 function useReveal(threshold = 0.15) {
@@ -143,6 +144,7 @@ function TypingText({ texts }) {
 const NAV_ITEMS = [
   { label: 'Summary', href: '#summary' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Strengths', href: '#strengths' },
   { label: 'Education', href: '#education' },
@@ -578,6 +580,11 @@ export default function App() {
             );
           })}
         </div>
+      </Section>
+
+      {/* PROJECTS */}
+      <Section id="projects" title="Featured Projects" icon={Zap}>
+        <Projects />
       </Section>
 
       {/* EDUCATION */}
